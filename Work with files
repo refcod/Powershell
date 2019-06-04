@@ -1,0 +1,2 @@
+Search throug a file including and excluding strings 
+Get-Content .\ps_suspicious.csv | Select-String -Pattern '(bypass|http)'| Select-String -NotMatch -Pattern '(37106)' | Measure-Object
